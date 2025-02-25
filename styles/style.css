@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 10px;
-  background-image: url(/images/cover-image-dark.png);
+  background-image: var(--bg-img);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -91,7 +91,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 0.5px solid var(--main-title-color);
+  border: 0.5px solid rgba(255, 0, 112, 0.4);
 }
 
 .header__theme-menu-button:active {
@@ -100,6 +100,10 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
 
 .title {

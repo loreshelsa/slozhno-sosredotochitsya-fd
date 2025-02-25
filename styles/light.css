@@ -15,9 +15,55 @@
   --bg-img: url(/images/cover-image-light.png);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --bg-img: url(/images/cover-image-light.png);
+  }
+
+  .decorated-zone__item::before {
+    display: none;
+  }
+  .decorated-zone__item::after {
+    display: none;
+  }
+  .decorated-zone::before {
+    border-color: var(--text-color);
+  }
+  .decorated-zone::after {
+    border-color: var(--text-color);
+  }
+  .header__theme-menu-button {
+    color: var(--text-color);
+  }
+  .header__theme-menu-button:hover {
+    border-color: rgba(50, 49, 45, 0.4);
+  }
+  .header__theme-menu-button:active {
+    border-color: var(--text-color);
+  }
+  .header__theme-menu-button:focus-visible {
+    border-bottom-color: var(--text-color);
+  }
+  .title-decor {
+    color: var(--text-color);
+  }
+  .article__title {
+    color: var(--text-color);
+  }
+  .article__item-text {
+    color: var(--text-color);
+  }
+  .subtitle-decor {
+    color: var(--text-color);
+  }
+}
+
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: url(/images/cover-image-light.png);
+  background-image: var(--bg-img);
 }
 .theme-light .decorated-zone__item::before {
   display: none;
@@ -62,56 +108,3 @@
 .theme-light .subtitle-decor {
   color: var(--text-color);
 }
-
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    .page {
-      /* Вам также нужно будет написать ряд подобных селекторов */
-      /* background-image: url(/images/cover-image-light.png);
-    }
-    .decorated-zone__item::before {
-      display: none;
-    }
-    .decorated-zone__item::after {
-      display: none;
-    }
-    .decorated-zone::before {
-      border-color: var(--text-color);
-    }
-    .decorated-zone::after {
-      border-color: var(--text-color);
-    }
-    .header__theme-menu-button {
-      color: var(--text-color);
-    }
-    .header__theme-menu-button:hover {
-      border-color: rgba(50, 49, 45, 0.4);
-    }
-    .header__theme-menu-button:active {
-      border-color: var(--text-color);
-    }
-    .header__theme-menu-button:focus-visible {
-      border-bottom-color: var(--text-color);
-    }
-    .title {
-      color: var(--main-title-color);
-    }
-    .header__title {
-      text-shadow: 4px 4px 0 var(--accent-color);
-    }
-    .title-decor {
-      background-color: var(--accent-color);
-      color: var(--text-color);
-    }
-    .article__title {
-      color: var(--text-color);
-    }
-    .article__item-text {
-      color: var(--text-color);
-    }
-    .subtitle-decor {
-      color: var(--text-color);
-    }
-  } */
-/* } */

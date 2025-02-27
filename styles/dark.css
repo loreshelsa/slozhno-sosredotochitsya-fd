@@ -10,8 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-title-color: #db00ff;
-  --accent-color: #ff0070;
+  --title-background-color: #ff0070;
+  --title-color: #ff0070;
+  --title-shadow-color: #ff0070;
   --text-color: #f1b2ce;
-  --title-color: #000028;
-  --bg-img: url(/images/cover-image-dark.png);
+  --sub-title-color: #000028;
+  --bg-img: url(../images/cover-image-dark.png);
+  --page-bg-color: #000028;
+  --record-display: inline-block;
+  --btn-outline-color: rgba(255, 0, 112, 0.4);
 }

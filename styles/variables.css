@@ -4,15 +4,19 @@
 */
 
 :root {
-  --main-font: "IBM Plex Mono", sans-serif;
+  --main-font: "IBM Plex Mono", monospace;
   --common-text-size: 18px;
-  --bold-font-weight: 700;
-  --h1-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --h1-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-
+  --bold-font: 700;
+  --article-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --article-title-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --page-bg-color: #000028;
   --main-title-color: #db00ff;
-  --accent-color: #ff0070;
+  --title-background-color: #ff0070;
+  --title-color: #ff0070;
+  --title-shadow-color: #ff0070;
   --text-color: #f1b2ce;
-  --title-color: #000028;
-  --bg-img: url(/images/cover-image-dark.png);
+  --sub-title-color: #000028;
+  --bg-img: url(../images/cover-image-dark.png);
+  --record-display: inline-block;
+  --btn-outline-color: rgba(255, 0, 112, 0.4);
 }

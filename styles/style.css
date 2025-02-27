@@ -230,6 +230,10 @@
     top: 20px;
   }
 
+  .decorated-zone__item::before {
+    margin-inline-end: 10px;
+  }
+
   .decorated-zone::after {
     left: 20px;
     bottom: 20px;
@@ -341,6 +345,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .decorated-zone__item::before {
+    margin-inline-end: 10px;
   }
 
   .title {

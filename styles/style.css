@@ -364,10 +364,6 @@
   }
 
   .decorated-zone__item::after {
-    margin-inline-end: 10px;
-  }
-
-  .decorated-zone__item::after {
     margin-inline-end: 9px;
   }
 

@@ -30,7 +30,9 @@
 .decorated-zone__item::before {
   content: "rec";
   display: var(--record-display);
-  margin-inline-end: 14px;
+  margin-inline-end: 13px;
+  font-size: 18px;
+  line-height: 25px;
   vertical-align: middle;
   color: var(--title-color);
   text-transform: uppercase;
@@ -78,7 +80,7 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header__theme-menu-item {
@@ -93,6 +95,8 @@
   height: 100%;
   border: 1px solid transparent;
   color: var(--title-color);
+  font-size: 18px;
+  line-height: 1.1;
   text-transform: lowercase;
   background-color: transparent;
 }
@@ -117,12 +121,12 @@
 .title {
   color: var(--main-title-color);
   font-size: var(--article-title-mobile);
-  line-height: 101.7px;
+  line-height: 95.7px;
 }
 
 .header__title {
-  margin-block-start: 65px;
-  margin-block-end: 48px;
+  margin-block-start: 67px;
+  margin-block-end: 54px;
   text-shadow: 4px 4px 0 var(--title-shadow-color);
 }
 
@@ -136,7 +140,7 @@
 
 .main {
   margin-block-start: 39px;
-  margin-block-end: 46px;
+  margin-block-end: 42px;
 }
 
 .article {
@@ -150,17 +154,20 @@
   font-size: var(--common-text-size, 18px);
 }
 
+.article__item {
+  margin-block-end: 20px;
+}
+
 .article__item-title {
   margin-block-end: 10px;
-  line-height: 1.5;
-  letter-spacing: 1px;
+  line-height: 23.4px;
 }
 
 .article__item-text {
-  margin-block-end: 20px;
   color: var(--text-color);
   font-weight: 400;
   font-size: var(--common-text-size, 18px);
+  line-height: 23.4px;
 }
 
 .link-decor {
@@ -190,7 +197,7 @@
 }
 
 .article__gallery-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .gallery-img {
@@ -222,7 +229,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content 1fr;
-    gap: 157px;
+    gap: 11vh;
   }
 
   .decorated-zone__item {
@@ -260,7 +267,7 @@
   .title {
     margin-block-start: 50px;
     font-size: var(--article-title-desktop);
-    line-height: 0.1;
+    line-height: 99px;
   }
 
   .main {
@@ -332,9 +339,9 @@
 
 @media (width >= 1024px) {
   .header {
-    gap: 0;
-    grid-template-rows: none;
-    grid-template-columns: none;
+    gap: 80px;
+    /* grid-template-rows: none;
+    grid-template-columns: none; */
   }
 
   .header__theme-menu {
@@ -352,7 +359,7 @@
   }
 
   .title {
-    margin-block-start: 200px;
+    margin-block-start: 50px;
   }
 
   .main {

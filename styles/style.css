@@ -134,7 +134,7 @@
   color: var(--sub-title-color);
   font-weight: var(--bold-font, 700);
   font-size: var(--common-text-size, 18px);
-  line-height: 23.4px;
+  line-height: var(--common-line-height);
   background-color: var(--title-background-color);
 }
 
@@ -152,7 +152,7 @@
   color: var(--title-color);
   font-weight: var(--bold-font, 700);
   font-size: var(--common-text-size, 18px);
-  line-height: 23.4px;
+  line-height: var(--common-line-height);
 }
 
 .article__item {
@@ -161,14 +161,14 @@
 
 .article__item-title {
   margin-block-end: 10px;
-  line-height: 23.4px;
+  line-height: var(--common-line-height);
 }
 
 .article__item-text {
   color: var(--text-color);
   font-weight: 400;
   font-size: var(--common-text-size, 18px);
-  line-height: 23.4px;
+  line-height: var(--common-line-height);
 }
 
 .link-decor {
